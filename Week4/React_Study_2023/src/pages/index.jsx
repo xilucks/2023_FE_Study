@@ -1,13 +1,16 @@
+import TodoInputBox from "../components/TodoInputBox/index.jsx";
+import { useState } from "react";
+import CheckList from "../components/CheckList/index.jsx";
+
 const MainPage = () => {
-    return(
-        <div>
-            메인
-            페이지
-            입니다
-            <button className={"btn"}>d</button>
-        </div>
-    )
+  return (
+    <div className={"text-center"}>
+      <TodoInputBox />
+      <div className={"mt-10"}>
+        <CheckList />
+      </div>
+    </div>
+  );
+};
 
-}
-
-export default MainPage
+export default MainPage;
